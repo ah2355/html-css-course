@@ -97,6 +97,30 @@ li:nth-child(even) {
   /* color: red; */
 }
 
-article p:last-child {
+/* Misconception this wont work! 
+should be last-child*/
+article p:first-child {
   color: red;
 }
+
+/* styling links */
+a:link {
+  color: #109bad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #109bad;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* Should always be in this order: LVHA (link-visited-hover-active) */
